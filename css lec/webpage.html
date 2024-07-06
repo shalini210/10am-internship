@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Zone</title>
     <style>
-        .header
+        header
         {
-            height:120px;
+            height:100px;
             background-color: rgb(230, 91, 137);
             width: 100%;
             display: flex;
@@ -38,7 +38,7 @@
         }
         .menu>ul>li
         {
-            height:120px;
+            height:100px;
             width: 120px;
             
             display: flex;
@@ -57,22 +57,72 @@
         {
             background-color: #ce0085;
         }
+        #banner
+        {
+            height:350px;
+            width:100%;
+            /* border:1px solid red; */
+            background-image: url('images/banner.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        h3
+        {
+            text-align: center;
+            color:#ce0085;
+            opacity: 0.7;
+            font-family: cursive;
+            margin-top: 100px;
+        }
+        #aboutus
+        {margin-top: 100px;
+            height:500px;
+            /* background-color: gray; */
+            display: flex;
+            gap: 4%;
+        }
+        #aboutus>div
+        {
+            width: 48%;
+        }
+        #aimg
+        {
+            background-image: url("images/aboutimg.jpg");
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
+    <header>
             <div class="logo"></div>
             <div class="menu">
                 <ul>
                     <li><a href="webpage.html">Home</a></li>
-                    <li><a href="#">About Us </a></li>
+                    <li><a href="#aboutus">About Us </a></li>
                     <li><a href="#">Our Branches</a></li>
                     <li><a href="#">Images</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Contact us </a></li>
                 </ul>
             </div>
+    </header>
+    <div id="banner">
+
     </div>
-    
+    <h3>
+        Nowadays, friends, families, couples, etc, are looking for <br> something more than food at a chill place. So, fun is the element that is needed,<br> which is only available at BOXPARK Ahmedabad. 
+    </h3>
+    <section id="aboutus">
+        <div id="aimg"></div>
+        <div id="acontent"><h4>ABOUT 
+            <span style="color:whitesmoke;
+        background-color: orange;"> FUNBLAST</span></h4>
+        <h1 style="font-size: 50px;">
+            The Best Fun With Family & Friend
+        </h1>
+    <p>
+        Welcome To Funblast - Where Adventure Meets Fun! Experience The Thrill Of Our Exciting Rides And Immerse Yourself In A World Of Entertainment Like Never Before. From Heart-Pounding Adventures To Delightful Events, Funblast Promises An Unforgettable Experience For Everyone. Come, Join The Excitement And Create Lasting Memories With Us!
+    </p></div>
+    </section>
 </body>
 </html>
