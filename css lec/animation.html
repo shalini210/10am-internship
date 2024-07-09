@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball
+        {
+            height:50px;
+            width:50px;
+            background-color: red;
+            border-radius: 50%;
+            animation-name: ballanimate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes ballanimate {
+            from{  background-color: red;}
+            to{  background-color:yellow;}
+        }
+
+        .ball2
+        {
+            height:50px;
+            width:50px;
+            background-color: red;
+            border-radius: 50%;
+            animation: ball2animate 2s infinite;
+        }
+        @keyframes ball2animate {
+            0%{background-color: red;margin-left: 0px;}
+            50%{background-color: yellow;margin-left:200px;}
+            100%{background-color: red;margin-left: 0px;}
+        }
+        .box
+        {
+            height:100px;
+            width:100px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom:2px solid yellow;
+            /* border-right:2 */
+            /* background-color: yellow; */
+            animation: boxanimate 2s infinite;
+        }
+        @keyframes boxanimate {
+            0%{ transform: rotate(0deg);}
+            /* 50%{transform: rotate(180deg);} */
+            100%{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ball"> </div>
+    <div class="ball2"></div>
+    <div class="box"></div>
+</body>
+</html>
