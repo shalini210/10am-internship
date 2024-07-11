@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum()
+        {
+        var a,b,c;
+        a = document.getElementById("txta").value;
+        b = document.getElementById("txtb").value;
+        c=parseInt(a)+parseInt(b)
+document.getElementById("presult").innerHTML="Sum is "+c;
+        }
+    </script>
+</head>
+<body>
+    <p>a: <input type="text" id="txta"></p>
+    <p>b: <input type="text" id="txtb"></p>
+    <input type="button" value="+" onclick="sum();">
+    <p id="presult"></p>
+</body>
+</html>
